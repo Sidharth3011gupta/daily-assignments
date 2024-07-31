@@ -1,0 +1,56 @@
+.container{
+    background-color: aqua;
+margin-left: 3%;width: 405px;height: 70px;display: flex;justify-content: center;align-items: center;
+}
+.hatred{
+    width: 170px;
+    height:300px;
+    display: flex;
+    flex-direction: column;gap: 5px;
+}.malice:nth-child(1)
+{
+    background-color: blueviolet;
+    width: 170px;
+    height: 150px;   text-align: center;
+}.malice:nth-child(2){
+    background-color: blanchedalmond;width: 170px;
+    height: 150px;
+    text-align: center;
+}
+.p2{
+    width: 230px;
+    height:300px;
+    display: flex;
+    flex-direction: column;gap: 5px;
+}
+.hhh:nth-child(1)
+{
+    background-color: rgb(238, 150, 42);width:230px ;
+    height: 225px;   text-align: center;
+}
+.hhh:nth-child(2){
+    background-color: aquamarine;
+    width: 230px;
+    height: 75px;   text-align: center;
+}
+.main{
+    display: flex;column-gap: 5px;width: 405px;
+    height: 300px;margin-left: 3%;
+}.footer{
+background-color: brown;width: 405px;
+height: 70px;display: flex;justify-content: center;align-items: center;
+margin-left: 3%;}
+.three{
+    display: flex;margin-left: 3%;gap: 5px;
+}.three1{
+    background-color: rgb(200, 200, 12);
+width: 250px;text-align: center;height: 70px;
+}.three2{
+    background-color: rgb(227, 25, 25);
+    width: 150px;height: 70px;text-align: center;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
