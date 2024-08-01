@@ -1,0 +1,41 @@
+.abc{
+    width: 90%;
+     margin: 5%;
+}
+.abcd{
+    width: 90%;
+    height: 75px;
+    margin: 5%;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    border: 2px solid black;
+    height: 650px;
+}
+.one{
+    display: flex; flex-direction: column;
+    border: 2px solid black; width: 80%;
+background-color: rgb(213, 223, 219);
+justify-content: center;
+margin: 0 auto;
+border: 1px solid rgb(14, 108, 42);
+height: 540px;
+}
+.big{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 238, 233);
+padding-top: 20px;
+padding-bottom: 20px;
+height: 680px;
+border: 2px solid green;
+}
+.ab{
+    margin: 5%;
+    background-color: aqua;
+    border-radius: 5px;
+}.baap{
+    display: flex;
+}
