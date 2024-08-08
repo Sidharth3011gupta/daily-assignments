@@ -15,7 +15,7 @@
     
 }
 body{
-    background-image:url(../marek-piwnicki-9gND1M4Xx-M-unsplash.jpg);
+    background-image:url(./marek-piwnicki-9gND1M4Xx-M-unsplash.jpg);
     background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed; 
@@ -38,7 +38,7 @@ nav{
     border:2px solid white ;
     width: 280px;
     margin-top: 50px;
-    background-image: url(../WhatsApp\ Image\ 2024-08-02\ at\ 10.34.06_0361849d.jpg);
+    background-image: url(./WhatsApp\ Image\ 2024-08-02\ at\ 10.34.06_0361849d.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
