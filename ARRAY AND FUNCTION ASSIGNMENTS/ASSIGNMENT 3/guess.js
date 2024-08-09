@@ -44,38 +44,7 @@ function guessnumber()
 do{
     guessnumber();
 
-    // while(guess!==answer)
-    //     {
-            
-
-    //          guess=parseInt(prompt("GUESS ANY NUMBER BETWEEN (1-100)"));
-    //          attempts++;
-    //     if(isNaN(guess))
-    //         {
-    //             alert("PLEASE ENTER A VALID NUMBER");
-    //         }
-    //         else if(guess>maxnum||guess<minnum)
-    //         {
-    //             alert("PLEASE ENTER A VALID NUMBER");
-    //         }
-    //         else{
-            
-    //             if(guess>answer)
-    //             {
-    //                 alert("TOO HIGH");
-        
-    //             }
-    //             else if(guess<answer)
-    //             {
-    //                 alert("TOO LOW")
-        
-    //             }
-    //             else{
-    //              alert(`CONGRATULATIONS , YOU GOT THE CORRECT ANSWER ${answer} IN ${attempts} ATTEMPTS` );
-                    
-    //             }
-    //         }
-    //     }
+  
         running =0;
         guess=0;
         attempts=0;
