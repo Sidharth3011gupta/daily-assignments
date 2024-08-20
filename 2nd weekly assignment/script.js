@@ -1,7 +1,13 @@
 let library = [];
-localStorage.setItem("bookpalace",JSON.stringify(library))
-document.getElementById('add-book-button').addEventListener('click', function() {
+window.onload = function() {
+    const storedLibrary = localStorage.getItem('library');
+    if (storedLibrary) {
+        library = JSON.parse(storedLibrary);
+        displayBooks();
+    }
+};
 
+document.getElementById('add-book-button').addEventListener('click', function() {
     const bookId = document.getElementById('book-id').value;
     const bookTitle = document.getElementById('book-title').value;
     const authorName = document.getElementById('author-name').value;
@@ -14,47 +20,42 @@ document.getElementById('add-book-button').addEventListener('click', function() 
             isBorrowed: false
         };
         library.push(book);
+        saveLibrary();
         displayBooks();
         alert('Book added successfully!');
     } else {
         alert('Please fill out all fields.');
     }
-    localStorage.setItem("bookpalace",JSON.stringify(library))
-const bookhub=JSON.parse(localStorage.getItem("library"))
 });
 
+function saveLibrary() {
+    localStorage.setItem('library', JSON.stringify(library));
+}
 function displayBooks() {
-    localStorage.setItem("bookpalace",JSON.stringify(library))
     const bookList = document.getElementById('book-list');
-    bookList.innerHTML = '';
-
+    bookList.innerHTML = ''; 
     library.forEach(book => {
         const bookEntry = document.createElement('div');
         bookEntry.className = 'book-entry';
         bookEntry.innerHTML = `ID: ${book.id}, Title: ${book.title}, Author: ${book.author}, Status: ${book.isBorrowed ? 'Borrowed' : 'Available'} 
                                <button onclick="toggleBorrow('${book.id}')">${book.isBorrowed ? 'Return' : 'Borrow'}</button>`;
         bookList.appendChild(bookEntry);
-        const bookhub=JSON.parse(localStorage.getItem("library"))
     });
 }
 
 function toggleBorrow(bookId) {
-    localStorage.setItem("bookpalace",JSON.stringify(library))
-    const book = library.find(item => item.id === bookId);
+    const book = library.find(b => b.id === bookId);
     if (book) {
         book.isBorrowed = !book.isBorrowed;
+        saveLibrary();
         displayBooks();
-    let books=JSON.parse(localStorage.getItem("library"))
     }
-
-
 }
 
 document.getElementById('search-button').addEventListener('click', function() {
     const searchTitle = document.getElementById('search-title').value.toLowerCase();
     const searchResults = document.getElementById('search-results');
-    searchResults.innerHTML = '';
-
+    searchResults.innerHTML = ''; 
     const foundBooks = library.filter(book => book.title.toLowerCase().includes(searchTitle));
     if (foundBooks.length > 0) {
         foundBooks.forEach(book => {
@@ -65,6 +66,4 @@ document.getElementById('search-button').addEventListener('click', function() {
     } else {
         searchResults.innerHTML = 'No books found.';
     }
-    localStorage.setItem("bookpalace",JSON.stringify(library))
-    let book=JSON.parse(localStorage.getItem("library"))
 });
