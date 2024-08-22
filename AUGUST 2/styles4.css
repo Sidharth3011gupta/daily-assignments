@@ -23,6 +23,10 @@ padding-left: 30px;
     background-color:rgb(205, 200, 194);
     border-radius: 50px;
 }
+.abcde{
+    background-color: blanchedalmond;
+    padding: 20px;
+}
 .parent{
     display: flex;
     padding-top: 3%;
