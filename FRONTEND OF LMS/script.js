@@ -20,7 +20,8 @@ function renderBookList(books) {
         bookEntry.className = 'book-entry';
         bookEntry.innerHTML = `
             <strong>Title:</strong> ${book.title} <br>
-            <strong>Author:</strong> ${book.author} <br>`;
+            <strong>Author:</strong> ${book.author} <br>
+             <strong>Borrowed:</strong> ${book.isBorrowed} <br>`;
 
       
         const editButton = document.createElement('button');
