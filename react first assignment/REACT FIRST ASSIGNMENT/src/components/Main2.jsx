@@ -31,13 +31,13 @@ const Main2 = () => {
     <div className='flex gap-4 w-full '>
     <Button 
     buttonContent={`Add to Cart`}
-    buttonColor={`blue-500`} 
+    buttonColor={`bg-blue-500`} 
     buttonTextColor={`white`}
     />
 
 <Button 
     buttonContent={`Buy Now`}
-    buttonColor={`orange-500`} 
+    buttonColor={`bg-orange-500`} 
     buttonTextColor={`white`}
     />
     </div>
